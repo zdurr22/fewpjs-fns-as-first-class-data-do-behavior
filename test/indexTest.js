@@ -18,6 +18,7 @@ describe("index.js", () => {
 
       // The test library doesn't treat innerText and textContent the same, so we need to check for both
       // https://github.com/jsdom/jsdom/issues/1245
+      let greetingEl = document.querySelector('#greeting')
       let content = greetingEl.innerText
         ? greetingEl.innerText
         : greetingEl.textContent;
